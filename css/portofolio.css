@@ -29,13 +29,16 @@
     width: 80%;
     margin: 0 auto;
   }
-
+  .footer-i{
+    margin-top: 0px;
+  }
   /* ----- Main ----- */
 
   .portofolioMain{
       width: 100%;
       height: auto;
-      margin-top: 100px;
+      padding-top: 100px;
+      background-color: #faf3f3;
   }
   .portofolio1,.portofolio2,.portofolio3{
       display: flex;
@@ -75,7 +78,8 @@
     position: absolute;
     width: 100%;
     height: 65px;
-    bottom: 10px;
+    bottom: 30px;
+    left:20px;
     opacity: 0;
     padding: 0px 10px 0px 10px;
     visibility: hidden;
@@ -85,7 +89,16 @@
     opacity: 1;
     visibility: visible;
     color: black;
-    
+  }
+  .portofolio1Content h4 a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .portofolio1Content h3 a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
   }
   /* ---------- portofolio1 */
 
@@ -97,10 +110,54 @@
   }
 
   .portofolio2mainDiv{
+    position: relative;
     width: 100%;
     height: auto;
     margin: 25px 0px 25px 0px;
     background-color: white;
+  }
+  .portofolio2mainDiv::before{
+    background-image: linear-gradient(180deg, #ce1446 0%, #ef567c 100%);
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ce1446;
+    transition: all 0.4s ease 0s;
+  }
+  .portofolio2mainDiv:hover:before{
+    opacity: 0.9;
+    visibility: visible;
+  }
+  .portofolio2Content{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    bottom: 30px;
+    left:20px;
+    opacity: 0;
+    padding: 0px 10px 0px 10px;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+  }
+  .portofolio2mainDiv:hover .portofolio2Content{
+    opacity: 1;
+    visibility: visible;
+    color: black;
+  }
+  .portofolio2Content h4 a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .portofolio2Content h3 a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
   }
   .portofolio2Photo{
     width: 100%;

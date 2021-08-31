@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/blog.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
     <title>Blog page</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="headerContent">
-                <div class="headerLogo">
-                    <img alt="" src="https://keenitsolutions.com/products/html/dabble/assets/images/logo.png">
+            <nav>
+                <div class="logo">
+                    <img src="./images/logo-black.png" alt="">
                 </div>
-                <nav class="navLinks">
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="portofolio.html">PORTOFOLIO</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <div class="hamburgerMenu" data-aos="fade-up" data-aos-delay="300">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <ul class="navLinks">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portofolio.html">PORTOFOLIO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="row">
                     <div class="mainContentDiv col-12 col-lg-8">
-                        <div class="blog1">
+                        <div class="blog1" data-aos="fade-left">
                             <div class="blog-item">
                                 <div class="blog-image">
                                     <img src="./images/blogPhoto1.jpg" alt="metting" srcset="">
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="blog2">
+                        <div class="blog2" data-aos="fade-right">
                             <div class="blog-item">
                                 <div class="blog-image">
                                     <img src="./images/blogPhoto2.jpg" alt="metting" srcset="">
@@ -126,10 +126,10 @@
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="column">
-                            <div class="searchBox">
+                            <div class="searchBox" data-aos="zoom-in-right">
                                 <input type="text" value="Searching...">
                             </div>
-                            <div class="recentPosts">
+                            <div class="recentPosts" data-aos="zoom-in-left">
                                 <div class="recentPostsHeading">
                                     <h2>Recent Posts</h2>
                                 </div>
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                             
-                            <div class="categoriesBlog">
+                            <div class="categoriesBlog" data-aos="fade-up">
                                 <div class="recentPostsHeading">
                                     <h2>Categories</h2>
                                 </div>
@@ -191,9 +191,9 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 col-lg-4">
-                    <div class="footerAbout">
+                    <div class="footerAbout" data-aos="fade-right">
                         <div class="footerAboutPhoto">
-                            <img alt="" src="https://keenitsolutions.com/products/html/dabble/assets/images/logo.png">
+                            <img alt="" src="./images/logo-light.png">
                         </div>
                         <p>One of the main benefits of using Lorem Ipsum is that it can be easily 
                             generated, and it takes the pressure off designers to 
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="footerInfo">
+                    <div class="footerInfo" data-aos="fade-up">
                         <div class="footerInfoHeader">
                             <h1>Contact Info</h1>
                         </div>
@@ -277,7 +277,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="footerSubscribe">
+                    <div class="footerSubscribe" data-aos="fade-left">
                         <div class="footerSubscribeHeader">
                             <h1>Newsletter</h1>
                         </div>
@@ -298,4 +298,9 @@
 
 <script src="js/blog.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

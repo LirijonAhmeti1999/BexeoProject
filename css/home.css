@@ -1,0 +1,579 @@
+.footer-i {
+  margin-top: 0px;
+}
+body {
+  overflow-x: hidden;
+}
+/* Header ---------- */
+.headerPage {
+  width: 100%;
+  height: auto;
+  background-image: url("./../images/homeHeaderImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0px 120px 0px;
+}
+
+.headerInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.headerInfo h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  padding-top: 10px;
+  position: relative;
+}
+
+.headerInfo h1::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 6px;
+  left: 0px;
+  top: 0px;
+  background-color: #ce1446;
+}
+
+.headerButton {
+  width: 180px;
+  border: none;
+  padding: 17px 30px;
+  font-size: 14px;
+  background: #ce1446;
+  color: #ffffff;
+  border-radius: 0px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.headersideImage img {
+  width: 100%;
+  height: auto;
+}
+/* ------- Header */
+
+/* Section1 ------- */
+.section1 {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+.section1Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 50px 0px 50px 0px;
+}
+.section1Container img {
+  width: 70px;
+  height: 70px;
+  max-width: unset;
+  margin-top: 20px;
+}
+.s1containerInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.s1containerInfo h3 a {
+  color: white;
+  text-decoration: none;
+}
+.s1containerInfo p {
+  color: white;
+}
+/* ------- Section1 */
+
+/* Section2 ------- */
+
+.section2 {
+  width: 100%;
+  height: auto;
+  padding: 100px 0px 100px 0px;
+  background-color: #0c0b0b;
+}
+.section2Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px 0px 0px;
+}
+
+.section2infoTittle p {
+  color: #ce1446;
+  font-size: 17px;
+}
+.section2infoTittle h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+.section2InfoContent {
+  padding-top: 50px;
+  color: white;
+  position: relative;
+}
+.section2InfoContent::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 4px;
+  left: 0px;
+  top: 20px;
+  border-radius: 10px;
+  background-color: #ce1446;
+}
+.section2Button {
+  width: 180px;
+  border: none;
+  padding: 17px 30px;
+  font-size: 14px;
+  background: #ce1446;
+  color: #ffffff;
+  border-radius: 0px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.section2Image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------- section2 */
+
+/* Portofolio */
+
+.portofolioMain {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  background-color: #000000;
+}
+.portofolio1,
+.portofolio2,
+.portofolio3 {
+  display: flex;
+  flex-direction: column;
+}
+.portofoliaHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portofoliaHeader p {
+  color: #ce1446;
+}
+.portofoliaHeader h1 {
+  color: white;
+  padding-bottom: 50px;
+  position: relative;
+}
+.portofoliaHeader h1::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 5px;
+  bottom: 20px;
+  right: 30%;
+  transform: translate(-50%);
+  background-color: #ce1446;
+}
+/* portofolio1 ----------*/
+.portofolio1mainDiv {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+.photo1Content img {
+  width: 100%;
+  height: 100%;
+}
+.portofolio1mainDiv::before {
+  background-image: linear-gradient(180deg, #ce1446 0%, #ef567c 100%);
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ce1446;
+  transition: all 0.4s ease 0s;
+}
+.portofolio1mainDiv:hover:before {
+  opacity: 0.9;
+  visibility: visible;
+}
+.portofolio1Content {
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  bottom: 30px;
+  left: 20px;
+  opacity: 0;
+  padding: 0px 10px 0px 10px;
+  visibility: hidden;
+  transition: all 0.4s ease 0s;
+}
+.portofolio1mainDiv:hover .portofolio1Content {
+  opacity: 1;
+  visibility: visible;
+  color: black;
+}
+.portofolio1Content h4 a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+.portofolio1Content h3 a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.inputPortofolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+/* ---------- portofolio */
+
+/* Section3 -------- */
+
+.section3 {
+  width: 100%;
+  height: auto;
+  background-image: url("./../images/homeBackgroundImage1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0px 70px 0px;
+}
+.section3Image {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.section3Image img {
+  width: 95%;
+  height: auto;
+}
+.section3Info {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.section3InfoContent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3InfoHeader img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+.section3InfoContent p {
+  font-size: 22px;
+  font-style: oblique;
+  text-align: left;
+  padding: 0 56px 0 0;
+  color: white;
+}
+.section3InfoContentPerson {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0px 0px 0px;
+}
+.section3InfoContentPerson img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.section3PersonInfoContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 15px;
+}
+.section3PersonInfoContent :nth-child(1) {
+  margin: 0px;
+}
+
+/* Section4 ------ */
+
+.section4 {
+  background-color: #0c0b0b;
+  padding: 50px 0px 50px 0px;
+}
+.section4Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 50px 0px;
+}
+
+.section4Header h1 {
+  color: white;
+  padding-bottom: 50px;
+  position: relative;
+  margin-top: 10px;
+}
+.section4Header h1::after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 4px;
+  border-radius: 15px;
+  bottom: 20px;
+  right: 10%;
+  transform: translate(-50%);
+  background-color: #ce1446;
+}
+.section4Header img {
+  width: 70px;
+  height: 70px;
+}
+
+.section4OffertContainer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+}
+.section4Price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.section4Price p {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+.section4Price h1 {
+  color: #ce1446;
+  font-size: 45px;
+  font-weight: 700;
+}
+.sectionPriceDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.sectionPriceDetails p {
+  color: white;
+  font-size: 20px;
+}
+
+/* section5 ------- */
+
+.section5 {
+  background-color: black;
+  padding: 100px 0px 100px 0px;
+}
+.section5Image img {
+  width: 95%;
+  height: auto;
+}
+.contactForm {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contactFormTittle {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.contactFormTittle p {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ce1446;
+  /* margin: 0 0 10px;
+    display: block; */
+}
+.contactFormTittle h2 {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 46px;
+  color: white;
+  margin: 0;
+  padding-top: 20px;
+}
+.contactFormTittle h2::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 50%;
+  background: #ce1446;
+  z-index: 9999;
+  height: 5px;
+  border-radius: 20px;
+}
+.inputsForm {
+  width: 100%;
+  height: auto;
+
+  box-sizing: border-box;
+}
+.firstInputs,
+.secondsInputs {
+  display: flex;
+  flex-direction: row;
+}
+.nameInput,
+.emailInput,
+.phoneInput,
+.websiteInput {
+  width: 100%;
+  height: 70px;
+  border: none;
+}
+.messageInput {
+  height: 120px;
+  border: none;
+  margin-top: 20px;
+}
+.col-lg-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.submit {
+  background-color: #ce1446;
+  padding: 18px 40px 18px 40px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  border-radius: 0px 0px 0px 0px;
+  border: none;
+  color: white;
+}
+.contactMap {
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+}
+.contactMap iframe {
+  margin-top: 100px;
+}
+
+/* Section6 ------ */
+
+.section6 {
+  width: 100%;
+  height: auto;
+  background-color: #0c0b0b;
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.section6Header {
+  width: 100%;
+  height: 200px;
+  /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+  position: relative;
+}
+.section6Header p {
+  color: #ce1446;
+  font-size: 20px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.section6Header h1 {
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.section6Header h1::after {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 4px;
+  border-radius: 20px;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ce1446;
+}
+
+.mySwiperHome {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  overflow: hidden;
+}
+.swiperSlideImage {
+  width: 100%;
+  height: 50%;
+}
+.swiperSlideImage img {
+  max-width: 100%;
+  height: auto;
+}
+.swiperSlideContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+.swiperSlideContent :nth-child(1) {
+  color: white;
+}
+.swiperSlideContent :nth-child(2) {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
