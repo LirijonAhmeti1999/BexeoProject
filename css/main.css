@@ -192,7 +192,7 @@ footer {
     transition: all .15s linear .15s;
   }
   .navLinks.active{
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
   
   .navLinks.active li {
