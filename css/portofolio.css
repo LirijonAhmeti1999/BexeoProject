@@ -1,0 +1,113 @@
+.titlePage {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url("../images/contactPhoto1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .titlePage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    color: white;
+    font-size: 65px;
+  }
+  .titlePage h1::after {
+    content: "";
+    height: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left: 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: -1;
+    background: #ce1446;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* ----- Main ----- */
+
+  .portofolioMain{
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+  }
+  .portofolio1,.portofolio2,.portofolio3{
+      display: flex;
+      flex-direction: column;
+  }
+  /* portofolio1 ----------*/
+  .portofolio1mainDiv{
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-top: 25px;
+      margin-bottom: 15px;
+      background-color: white;
+  }
+  .photo1Content img{
+    width: 100%;
+    height: 100%;
+  }
+  .portofolio1mainDiv::before{
+    background-image: linear-gradient(180deg, #ce1446 0%, #ef567c 100%);
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ce1446;
+    transition: all 0.4s ease 0s;
+  }
+  .portofolio1mainDiv:hover:before{
+    opacity: 0.9;
+    visibility: visible;
+  }
+  .portofolio1Content{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    bottom: 10px;
+    opacity: 0;
+    padding: 0px 10px 0px 10px;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+  }
+  .portofolio1mainDiv:hover .portofolio1Content{
+    opacity: 1;
+    visibility: visible;
+    color: black;
+    
+  }
+  /* ---------- portofolio1 */
+
+  /* ---------- portofolio2  */
+
+  .portofolio2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portofolio2mainDiv{
+    width: 100%;
+    height: auto;
+    margin: 25px 0px 25px 0px;
+    background-color: white;
+  }
+  .portofolio2Photo{
+    width: 100%;
+    height: 100%;
+  }
+  .portofolio2Photo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }

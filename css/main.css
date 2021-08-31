@@ -155,6 +155,7 @@ footer {
 .footerinputEmail {
   width: 100%;
   height: 70px;
+  padding: 10px;
 }
 .footerinputSubmit {
   border: none;

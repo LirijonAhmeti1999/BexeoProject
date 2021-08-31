@@ -1,0 +1,140 @@
+.titlePage {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url("../images/contactPhoto1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .titlePage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    color: white;
+    font-size: 65px;
+  }
+  .titlePage h1::after {
+    content: "";
+    height: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left: 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: -1;
+    background: #ce1446;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* SectionOne -------- */
+
+  .sectionOne{
+      width: 100%;
+      height: auto;
+      background-color: #0c0b0b;
+      padding: 50px 0px 50px 0px;
+  }
+  /* .sectionOneContainer{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      padding: 50px 0px 50px 0px;
+  } */
+  .section1Photo{
+      width: 100%;
+      height: 600px;
+
+  }
+  .section1Photo img{
+      max-width: 100%;
+      height: 100%;
+  }
+
+    .infoSection1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .headerInfoSection1{
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+    .headerInfoSection1 p{
+        position: absolute;
+        color: #ce1446;
+        top: 25px;
+    }
+    .headerInfoSection1 h1{
+        position: absolute;
+        top: 50px;
+        padding-bottom: 10px;
+        color: white;
+        font-weight: 700;
+    }
+    .headerInfoSection1 h1::after{
+        content: "";
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        width: 20%;
+        background: #ce1446;
+        z-index: 9999;
+        height: 5px;
+        border-radius: 20px;
+    }
+    .contentInfoSection1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:300px;
+    }
+    .contentInfoSection1 p{
+        color: white;
+        font-size: 17px;
+        margin-top: 30px;
+    }
+   /* -------- SectionOne*/
+
+   /* sectionTwo --------- */
+
+    .sectionTwo{
+        width: 100%;
+        height: 800px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .section2Header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .section2Header::before{
+        content: "";
+        position: absolute;
+        top: 80px;
+        left: 600px;
+        width: 70px;
+        background: #ce1446;
+        height: 5px;
+    }
+    .section2Header h1{
+        font-size: 45px;
+        font-weight: 800;
+        color: white;
+    }
+    .section2Header p{
+        color: white;
+    }
+   /* ---------sectionTwo */
