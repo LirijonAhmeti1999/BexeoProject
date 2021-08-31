@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.mySwiperi', {
     // Optional parameters
     slidesPerView: 1,
     centeredSlides: true,
@@ -15,11 +15,11 @@ const swiper = new Swiper('.swiper-container', {
         spaceBetween: 20,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 50,
       },
     },
@@ -35,3 +35,5 @@ const swiper = new Swiper('.swiper-container', {
             clickable: true
         }
     });
+
+    

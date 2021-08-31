@@ -168,3 +168,8 @@
     height: auto;
     object-fit: contain;
   }
+
+  .portofolioMain,
+  .footer-i{
+    overflow: hidden;
+  }
